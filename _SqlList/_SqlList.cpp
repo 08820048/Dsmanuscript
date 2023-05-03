@@ -19,6 +19,8 @@ void TestPrint(const std::string &str);
 bool InitList(SqlList &L);
 bool CreateList(SqlList &L);
 bool GetVal(SqlList &L,int i,int &v);
+int LocateVal(SqlList L,int v);
+
 int main()
 {
     using std::cout;
@@ -38,7 +40,7 @@ int main()
     }
     cout <<"创建成功!" << endl;
 
-    cout << "插入3个元素之后，顺序表的长度:" << L.length <<"\n";
+    cout << "插入元素之后，顺序表的长度:" << L.length <<"\n";
     cout <<"顺序表的元素为:" << endl;
     for(int i=0;i<L.length;i++)
     {
@@ -53,6 +55,15 @@ int main()
         cout <<"获取失败!";
     }
     cout <<"第" << 3 << "个位置的元素为:" << v <<endl;
+    // 测试查找函数
+    TestPrint("------------------查找函数测试---------------");
+    v = -2;
+    int index = LocateVal(L,v);
+    if (index != -1)
+        cout <<"元素" << v <<"的索引为:" << index <<endl;
+    else
+        cout <<"查找失败!";
+
     delete[] L.val;
 
     return 0;
@@ -117,4 +128,21 @@ bool GetVal(SqlList &L,int i,int &v)
     }
     v = L.val[i-1];
     return true;
+}
+
+
+/**
+ * 查找指定元素
+ * @param L  顺序表
+ * @param v 指定元素
+ * @return 成功返回元素索引，失败返回-1
+ */
+int  LocateVal(SqlList L,int v)
+{
+    int i;
+    for(i=0;i<L.length;i++)
+    {
+        if (L.val[i] == v) return i;
+    }
+    return -1;
 }
