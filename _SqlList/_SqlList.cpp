@@ -20,6 +20,7 @@ bool InitList(SqlList &L);
 bool CreateList(SqlList &L);
 bool GetVal(SqlList &L,int i,int &v);
 int LocateVal(SqlList L,int v);
+bool ListInsert(SqlList &L,int i,int v);
 
 int main()
 {
@@ -62,7 +63,22 @@ int main()
     if (index != -1)
         cout <<"元素" << v <<"的索引为:" << index <<endl;
     else
-        cout <<"查找失败!";
+        cout <<"查找失败!"<<endl;
+    // 插入函数测试
+    TestPrint("------------------插入函数测试---------------");
+    v = 5;
+    if (ListInsert(L,5,v))
+        cout <<"成功向第5个位置插入了元素:" <<v <<"\n";
+    else
+        cout <<"插入失败!";
+    cout << "插入元素之后，顺序表的长度:" << L.length <<"\n";
+    cout <<"顺序表的元素为:" << endl;
+    for(int i=0;i<L.length;i++)
+    {
+        cout <<L.val[i] << " ";
+    }
+    cout << endl;
+
 
     delete[] L.val;
 
@@ -97,7 +113,7 @@ bool CreateList(SqlList &L)
 {
     int i = 0,x=0;
     std::cin >> x;
-    while(x!=-1) //代表输入-1时结束输入
+    while(x!=-10) //代表输入-1时结束输入
     {
         if(L.length == MaxSize)
         {
@@ -145,4 +161,22 @@ int  LocateVal(SqlList L,int v)
         if (L.val[i] == v) return i;
     }
     return -1;
+}
+
+/**
+ * 向顺序表第i个位置插入一个元素v
+ * @param L 顺序表
+ * @param i 第i个位置
+ * @param v 待插入的目标元素
+ * @return bool
+ */
+bool ListInsert(SqlList &L,int i,int v)
+{
+    if (i<1 || i > L.length + 1) return false; //插入位置合法性判断
+    if (L.length == MaxSize) return false; //表满，无法插入
+    for (int j = L.length-1;j >=i-1;j--) // 移位
+        L.val[j+1] = L.val[j];
+    L.val[i-1] = v; // 插入
+    L.length++;
+    return true; //完成插入
 }
