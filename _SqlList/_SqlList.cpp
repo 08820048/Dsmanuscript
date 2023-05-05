@@ -21,69 +21,145 @@ bool CreateList(SqlList &L);
 bool GetVal(SqlList &L,int i,int &v);
 int LocateVal(SqlList L,int v);
 bool ListInsert(SqlList &L,int i,int v);
-
-int main()
-{
-    using std::cout;
-    using std::cin;
-    using std::endl;
-    //测试初始化函数
-    TestPrint("------------------初始化函数测试---------------");
+bool ListDelete(SqlList &L,int i,int &v);
+// 函数测试
+//以下是我写的完整测试代码
+#include <iostream>
+using namespace std;
+// 测试初始化函数
+void test_InitList() {
     SqlList L;
-    if (!InitList(L))
-        cout <<"初始化失败!" << endl;
-    cout << "初始化成功!" << endl;
-    // 测试创建函数
-    TestPrint("------------------创建函数测试---------------");
-    if (!CreateList(L))
-    {
-        cout <<"创建失败!" << endl;
+    bool res = InitList(L);
+    if (res) {
+        cout << "InitList测试通过" << endl;
+    } else {
+        cout << "InitList测试不通过" << endl;
     }
-    cout <<"创建成功!" << endl;
-
-    cout << "插入元素之后，顺序表的长度:" << L.length <<"\n";
-    cout <<"顺序表的元素为:" << endl;
-    for(int i=0;i<L.length;i++)
-    {
-        cout <<L.val[i] << " ";
+}
+// 测试创建函数
+void test_CreateList() {
+    SqlList L;
+    bool res = CreateList(L);
+    if (res) {
+        cout << "CreateList测试通过" << endl;
+    } else {
+        cout << "CreateList测试不通过" << endl;
     }
-    cout << endl;
-    // 测试获取元素函数
-    TestPrint("------------------取值函数测试---------------");
+}
+// 测试获取元素函数
+void test_GetVal() {
+    SqlList L;
+    bool res = InitList(L);
+    if (!res) {
+        cout << "GetVal测试不通过，顺序表初始化失败" << endl;
+        return;
+    }
+    res = CreateList(L);
+    if (!res) {
+        cout << "GetVal测试不通过，顺序表创建失败" << endl;
+        return;
+    }
+    int i = 0;
+    cout << "请输入要获取的第几个元素的位置（1-" << L.length << "）：";
+    cin >> i;
     int v;
-    if (!GetVal(L,3,v))
-    {
-        cout <<"获取失败!";
+    res = GetVal(L, i, v);
+    if (res) {
+        cout << "GetVal测试通过，获取到第" << i << "个元素是" << v << endl;
+    } else {
+        cout << "GetVal测试不通过" << endl;
     }
-    cout <<"第" << 3 << "个位置的元素为:" << v <<endl;
-    // 测试查找函数
-    TestPrint("------------------查找函数测试---------------");
-    v = -2;
-    int index = LocateVal(L,v);
-    if (index != -1)
-        cout <<"元素" << v <<"的索引为:" << index <<endl;
-    else
-        cout <<"查找失败!"<<endl;
-    // 插入函数测试
-    TestPrint("------------------插入函数测试---------------");
-    v = 5;
-    if (ListInsert(L,5,v))
-        cout <<"成功向第5个位置插入了元素:" <<v <<"\n";
-    else
-        cout <<"插入失败!";
-    cout << "插入元素之后，顺序表的长度:" << L.length <<"\n";
-    cout <<"顺序表的元素为:" << endl;
-    for(int i=0;i<L.length;i++)
-    {
-        cout <<L.val[i] << " ";
+}
+// 测试查找元素函数
+void test_LocateVal() {
+    SqlList L;
+    bool res = InitList(L);
+    if (!res) {
+        cout << "LocateVal测试不通过，顺序表初始化失败" << endl;
+        return;
     }
-    cout << endl;
-
-
-    delete[] L.val;
-
+    res = CreateList(L);
+    if (!res) {
+        cout << "LocateVal测试不通过，顺序表创建失败" << endl;
+        return;
+    }
+    int v = 0;
+    cout << "请输入要查找的元素值：";
+    cin >> v;
+    int index = LocateVal(L, v);
+    if (index != -1) {
+        cout << "LocateVal测试通过，元素" << v << "的位置是" << index + 1 << endl;
+    } else {
+        cout << "LocateVal测试不通过" << endl;
+    }
+}
+// 测试插入元素函数
+void test_ListInsert() {
+    SqlList L;
+    bool res = InitList(L);
+    if (!res) {
+        cout << "ListInsert测试不通过，顺序表初始化失败" << endl;
+        return;
+    }
+    res = CreateList(L);
+    if (!res) {
+        cout << "ListInsert测试不通过，顺序表创建失败" << endl;
+        return;
+    }
+    cout << "请输入要插入的位置和值（位置从1开始）：";
+    int i, v;
+    cin >> i >> v;
+    res = ListInsert(L, i, v);
+    if (res) {
+        cout << "ListInsert测试通过，插入成功，插入后的列表为：";
+        for (int j = 0; j < L.length; j++) {
+            cout << L.val[j] << " ";
+        }
+        cout << endl;
+    } else {
+        cout << "ListInsert测试不通过" << endl;
+    }
+}
+// 测试删除元素函数
+void test_ListDelete() {
+    SqlList L;
+    bool res = InitList(L);
+    if (!res) {
+        cout << "ListDelete测试不通过，顺序表初始化失败" << endl;
+        return;
+    }
+    res = CreateList(L);
+    if (!res) {
+        cout << "ListDelete测试不通过，顺序表创建失败" << endl;
+        return;
+    }
+    cout << "请输入要删除的位置（位置从1开始）：";
+    int i;
+    cin >> i;
+    int v;
+    res = ListDelete(L, i, v);
+    if (res) {
+        cout << "ListDelete测试通过，删除成功，删除的元素值为" << v << "，删除后的列表为：";
+        for (int j = 0; j < L.length; j++) {
+            cout << L.val[j] << " ";
+        }
+        cout << endl;
+    } else {
+        cout << "ListDelete测试不通过" << endl;
+    }
+}
+// 测试入口函数
+int main() {
+    test_InitList();
+    test_CreateList();
+    test_GetVal();
+    test_LocateVal();
+    test_ListInsert();
+    test_ListDelete();
     return 0;
 }
+
+
 
 void TestPrint(const std::string &str)
 {
@@ -179,4 +255,21 @@ bool ListInsert(SqlList &L,int i,int v)
     L.val[i-1] = v; // 插入
     L.length++;
     return true; //完成插入
+}
+
+/**
+ * 删除第i个元素
+ * @param L 顺序表
+ * @param i 第i个元素
+ * @param v 暂存待删除的元素
+ * @return bool
+ */
+bool ListDelete(SqlList &L,int i,int &v)
+{
+    if (i < 1 || i >L.length) return false; //合法性判断
+    v = L.val[i-1]; // 暂存待删除的元素，如果确定不需要返回删除元素的情况下，可以省略这一步
+    for (int j = i;j <= L.length-1;j++)
+        L.val[j-1] = L.val[j]; //第i个后面的元素依次向前移动
+    L.length--;
+    return true;
 }
