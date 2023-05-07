@@ -3,7 +3,7 @@
 * Date: 2023/5/7
 * Email: iliekxff@gmail.com
 * Blog: https://waer.ltd
-* Desc: 
+* Desc: 单链表.h文件，定义单链表结构以及常用函数
 **/
 
 #include <iostream>

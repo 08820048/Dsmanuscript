@@ -3,7 +3,7 @@
 * Date: 2023/5/7
 * Email: iliekxff@gmail.com
 * Blog: https://waer.ltd
-* Desc: 
+* Desc: 单链表具体函数的实现
 **/
 #include "_LinkList.h"
 #include <iostream>
