@@ -1,3 +1,0 @@
-C:/Clion/dsforcpp/cmake-build-debug/CMakeFiles/dsforcpp.dir
-C:/Clion/dsforcpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Clion/dsforcpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
