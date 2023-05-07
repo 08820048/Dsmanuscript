@@ -1,4 +1,4 @@
-*.idea/
+./idea/
 ### C++ template
 # Prerequisites
 *.d
