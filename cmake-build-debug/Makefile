@@ -128,29 +128,77 @@ dsforcpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/build
 .PHONY : dsforcpp/fast
 
-_SqlList/_SqlList.obj: _SqlList/_SqlList.cpp.obj
-.PHONY : _SqlList/_SqlList.obj
+LinkList/_LinkList.obj: LinkList/_LinkList.cpp.obj
+.PHONY : LinkList/_LinkList.obj
 
 # target to build an object file
-_SqlList/_SqlList.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.obj
-.PHONY : _SqlList/_SqlList.cpp.obj
+LinkList/_LinkList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.obj
+.PHONY : LinkList/_LinkList.cpp.obj
 
-_SqlList/_SqlList.i: _SqlList/_SqlList.cpp.i
-.PHONY : _SqlList/_SqlList.i
+LinkList/_LinkList.i: LinkList/_LinkList.cpp.i
+.PHONY : LinkList/_LinkList.i
 
 # target to preprocess a source file
-_SqlList/_SqlList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.i
-.PHONY : _SqlList/_SqlList.cpp.i
+LinkList/_LinkList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.i
+.PHONY : LinkList/_LinkList.cpp.i
 
-_SqlList/_SqlList.s: _SqlList/_SqlList.cpp.s
-.PHONY : _SqlList/_SqlList.s
+LinkList/_LinkList.s: LinkList/_LinkList.cpp.s
+.PHONY : LinkList/_LinkList.s
 
 # target to generate assembly for a file
-_SqlList/_SqlList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.s
-.PHONY : _SqlList/_SqlList.cpp.s
+LinkList/_LinkList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.s
+.PHONY : LinkList/_LinkList.cpp.s
+
+SqlList/_SqlList.obj: SqlList/_SqlList.cpp.obj
+.PHONY : SqlList/_SqlList.obj
+
+# target to build an object file
+SqlList/_SqlList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.obj
+.PHONY : SqlList/_SqlList.cpp.obj
+
+SqlList/_SqlList.i: SqlList/_SqlList.cpp.i
+.PHONY : SqlList/_SqlList.i
+
+# target to preprocess a source file
+SqlList/_SqlList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.i
+.PHONY : SqlList/_SqlList.cpp.i
+
+SqlList/_SqlList.s: SqlList/_SqlList.cpp.s
+.PHONY : SqlList/_SqlList.s
+
+# target to generate assembly for a file
+SqlList/_SqlList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.s
+.PHONY : SqlList/_SqlList.cpp.s
+
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -161,9 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... dsforcpp
-	@echo ... _SqlList/_SqlList.obj
-	@echo ... _SqlList/_SqlList.i
-	@echo ... _SqlList/_SqlList.s
+	@echo ... LinkList/_LinkList.obj
+	@echo ... LinkList/_LinkList.i
+	@echo ... LinkList/_LinkList.s
+	@echo ... SqlList/_SqlList.obj
+	@echo ... SqlList/_SqlList.i
+	@echo ... SqlList/_SqlList.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 

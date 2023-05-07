@@ -68,33 +68,65 @@ include CMakeFiles/dsforcpp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/dsforcpp.dir/flags.make
 
-CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.obj: CMakeFiles/dsforcpp.dir/flags.make
-CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.obj: C:/Clion/dsforcpp/_SqlList/_SqlList.cpp
-CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.obj: CMakeFiles/dsforcpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Clion\dsforcpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.obj"
-	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.obj -MF CMakeFiles\dsforcpp.dir\_SqlList\_SqlList.cpp.obj.d -o CMakeFiles\dsforcpp.dir\_SqlList\_SqlList.cpp.obj -c C:\Clion\dsforcpp\_SqlList\_SqlList.cpp
+CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.obj: CMakeFiles/dsforcpp.dir/flags.make
+CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.obj: C:/Clion/dsforcpp/SqlList/_SqlList.cpp
+CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.obj: CMakeFiles/dsforcpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Clion\dsforcpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.obj"
+	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.obj -MF CMakeFiles\dsforcpp.dir\SqlList\_SqlList.cpp.obj.d -o CMakeFiles\dsforcpp.dir\SqlList\_SqlList.cpp.obj -c C:\Clion\dsforcpp\SqlList\_SqlList.cpp
 
-CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.i"
-	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Clion\dsforcpp\_SqlList\_SqlList.cpp > CMakeFiles\dsforcpp.dir\_SqlList\_SqlList.cpp.i
+CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.i"
+	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Clion\dsforcpp\SqlList\_SqlList.cpp > CMakeFiles\dsforcpp.dir\SqlList\_SqlList.cpp.i
 
-CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.s"
-	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Clion\dsforcpp\_SqlList\_SqlList.cpp -o CMakeFiles\dsforcpp.dir\_SqlList\_SqlList.cpp.s
+CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.s"
+	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Clion\dsforcpp\SqlList\_SqlList.cpp -o CMakeFiles\dsforcpp.dir\SqlList\_SqlList.cpp.s
+
+CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.obj: CMakeFiles/dsforcpp.dir/flags.make
+CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.obj: C:/Clion/dsforcpp/LinkList/_LinkList.cpp
+CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.obj: CMakeFiles/dsforcpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Clion\dsforcpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.obj"
+	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.obj -MF CMakeFiles\dsforcpp.dir\LinkList\_LinkList.cpp.obj.d -o CMakeFiles\dsforcpp.dir\LinkList\_LinkList.cpp.obj -c C:\Clion\dsforcpp\LinkList\_LinkList.cpp
+
+CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.i"
+	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Clion\dsforcpp\LinkList\_LinkList.cpp > CMakeFiles\dsforcpp.dir\LinkList\_LinkList.cpp.i
+
+CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.s"
+	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Clion\dsforcpp\LinkList\_LinkList.cpp -o CMakeFiles\dsforcpp.dir\LinkList\_LinkList.cpp.s
+
+CMakeFiles/dsforcpp.dir/main.cpp.obj: CMakeFiles/dsforcpp.dir/flags.make
+CMakeFiles/dsforcpp.dir/main.cpp.obj: C:/Clion/dsforcpp/main.cpp
+CMakeFiles/dsforcpp.dir/main.cpp.obj: CMakeFiles/dsforcpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Clion\dsforcpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dsforcpp.dir/main.cpp.obj"
+	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dsforcpp.dir/main.cpp.obj -MF CMakeFiles\dsforcpp.dir\main.cpp.obj.d -o CMakeFiles\dsforcpp.dir\main.cpp.obj -c C:\Clion\dsforcpp\main.cpp
+
+CMakeFiles/dsforcpp.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dsforcpp.dir/main.cpp.i"
+	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Clion\dsforcpp\main.cpp > CMakeFiles\dsforcpp.dir\main.cpp.i
+
+CMakeFiles/dsforcpp.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dsforcpp.dir/main.cpp.s"
+	C:\Cmake\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Clion\dsforcpp\main.cpp -o CMakeFiles\dsforcpp.dir\main.cpp.s
 
 # Object files for target dsforcpp
 dsforcpp_OBJECTS = \
-"CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.obj"
+"CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.obj" \
+"CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.obj" \
+"CMakeFiles/dsforcpp.dir/main.cpp.obj"
 
 # External object files for target dsforcpp
 dsforcpp_EXTERNAL_OBJECTS =
 
-dsforcpp.exe: CMakeFiles/dsforcpp.dir/_SqlList/_SqlList.cpp.obj
+dsforcpp.exe: CMakeFiles/dsforcpp.dir/SqlList/_SqlList.cpp.obj
+dsforcpp.exe: CMakeFiles/dsforcpp.dir/LinkList/_LinkList.cpp.obj
+dsforcpp.exe: CMakeFiles/dsforcpp.dir/main.cpp.obj
 dsforcpp.exe: CMakeFiles/dsforcpp.dir/build.make
 dsforcpp.exe: CMakeFiles/dsforcpp.dir/linkLibs.rsp
 dsforcpp.exe: CMakeFiles/dsforcpp.dir/objects1
 dsforcpp.exe: CMakeFiles/dsforcpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Clion\dsforcpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dsforcpp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Clion\dsforcpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable dsforcpp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\dsforcpp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

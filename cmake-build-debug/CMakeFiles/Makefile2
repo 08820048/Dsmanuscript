@@ -80,12 +80,12 @@ clean: CMakeFiles/dsforcpp.dir/clean
 CMakeFiles/dsforcpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\dsforcpp.dir\build.make CMakeFiles/dsforcpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Clion\dsforcpp\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target dsforcpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Clion\dsforcpp\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target dsforcpp"
 .PHONY : CMakeFiles/dsforcpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dsforcpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Clion\dsforcpp\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Clion\dsforcpp\cmake-build-debug\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/dsforcpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Clion\dsforcpp\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/dsforcpp.dir/rule

@@ -3,4 +3,4 @@ project(dsforcpp)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(dsforcpp _SqlList/_SqlList.cpp)
+add_executable(dsforcpp SqlList/_SqlList.cpp LinkList/_LinkList.cpp LinkList/_LinkList.h main.cpp)

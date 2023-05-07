@@ -80,7 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Clion/dsforcpp/_SqlList/_SqlList.cpp">
+		<Unit filename="C:/Clion/dsforcpp/LinkList/_LinkList.cpp">
+			<Option target="dsforcpp"/>
+		</Unit>
+		<Unit filename="C:/Clion/dsforcpp/LinkList/_LinkList.h">
+			<Option target="dsforcpp"/>
+		</Unit>
+		<Unit filename="C:/Clion/dsforcpp/SqlList/_SqlList.cpp">
+			<Option target="dsforcpp"/>
+		</Unit>
+		<Unit filename="C:/Clion/dsforcpp/main.cpp">
 			<Option target="dsforcpp"/>
 		</Unit>
 		<Unit filename="C:/Clion/dsforcpp/CMakeLists.txt">
