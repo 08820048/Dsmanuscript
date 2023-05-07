@@ -53,7 +53,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Clion/dsforcpp/CMakeLists.txt",
+    "last_opened_file_path": "C:/Clion/dsforcpp/cmake-build-debug",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,7 +93,7 @@
       <workItem from="1683440246358" duration="1108000" />
       <workItem from="1683441381970" duration="465000" />
       <workItem from="1683441869400" duration="5070000" />
-      <workItem from="1683462564176" duration="2573000" />
+      <workItem from="1683462564176" duration="3013000" />
     </task>
     <servers />
   </component>
