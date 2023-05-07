@@ -1,5 +1,4 @@
-.idea/
-.cmake-build-debug/
+/.idea/
 ### C++ template
 # Prerequisites
 *.d
@@ -33,3 +32,4 @@
 *.out
 *.app
 
+/cmake-build-debug/
