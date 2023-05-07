@@ -10,9 +10,7 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated>
-      <config projectName="dsforcpp" targetName="dsforcpp" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -53,7 +51,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "正在合并 master",
+    "last_opened_file_path": "C:/Clion/dsforcpp/CMakeLists.txt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,7 +67,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dsforcpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="dsforcpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="dsforcpp">
+    <configuration name="dsforcpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dsforcpp" TARGET_NAME="dsforcpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dsforcpp" RUN_TARGET_NAME="dsforcpp">
       <envs>
         <env name="-Dfile.encoding" value="UTF-8" />
       </envs>
@@ -93,7 +91,7 @@
       <workItem from="1683440246358" duration="1108000" />
       <workItem from="1683441381970" duration="465000" />
       <workItem from="1683441869400" duration="5070000" />
-      <workItem from="1683462564176" duration="1686000" />
+      <workItem from="1683462564176" duration="2259000" />
     </task>
     <servers />
   </component>
