@@ -44,5 +44,29 @@ void CreateLinkList_H(LinkList &L)
     }
 }
 
+/**
+ * 单链表的创建-尾插法
+ * @param L 单链表
+ */
+void CreateLinkList_R(LinkList &L)
+{
+    int n; //链表节点数量
+    LinkList s,R;
+    L = new Node;
+    L->next = nullptr;
+    R = L;
+    std::cout <<"输入节点个数:" << std::endl;
+    std::cin >> n;
+    std::cout <<"依次输入n个元素:" << std::endl;
+    while (n--)
+    {
+        s = new Node; // 创建新的节点
+        std::cin >> s->data; // 给新节点赋值
+        s->next = nullptr; // 将新节点的next指针域置空
+        R->next = s; // 将新节点插入到当前节点之后
+        R = s; // 完成尾指针的赋值，更新尾指针的指向
+    }
+}
+
 
 

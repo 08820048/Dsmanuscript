@@ -10,17 +10,15 @@
 
 int main()
 {
-    setlocale(LC_ALL,"");
-    LinkList L;
-    bool result = InitLinkList(L);
-    if (result) {
-        std::cout << "InitLinkList success!" << std::endl;
-    } else {
-        std::cout << "InitLinkList fail!" << std::endl;
+    LinkList L = nullptr;
+    CreateLinkList_R(L); //创建链表
+    //遍历链表
+    std::cout<<"链表中的元素为："<<std::endl;
+    Node *p = L->next; //从第一个节点开始
+    while (p != nullptr) {
+        std::cout<<p->data<<" ";
+        p = p->next; //继续遍历下一个节点
     }
-
-    std::cout << "Creating LinkList using Head Insert method..." << std::endl;
-    CreateLinkList_H(L);
-    std::cout << "LinkList created successfully!" << std::endl;
+    std::cout<<std::endl;
     return 0;
 }
