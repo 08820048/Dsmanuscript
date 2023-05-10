@@ -91,6 +91,12 @@ bool GetVal(LinkList L,int i,int &v)
     return true;
 }
 
+/**
+ * 查找单链表中的指定节点值
+ * @param L 单链表
+ * @param e 要查找的目标值
+ * @return bool
+ */
 bool LocateVal(LinkList L,int v)
 {
     LinkList p;
