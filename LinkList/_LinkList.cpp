@@ -91,4 +91,13 @@ bool GetVal(LinkList L,int i,int &v)
     return true;
 }
 
-
+bool LocateVal(LinkList L,int v)
+{
+    LinkList p;
+    p = L->next;
+    while (p&&p->data != v)
+        p = p->next;
+    if(!p) // 到达链表尾部，查找失败
+        return false;
+    return true;
+}
