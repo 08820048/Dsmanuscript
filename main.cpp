@@ -20,10 +20,12 @@ int main()
 {
     LinkList L;
     CreateLinkList_R(L);
-    if (InsertLinkList(L,3,88))
+    if (InsertLinkList(L,4,88))
         cout <<"success!\n";
     else
         cout <<"fail!"<<endl;
+    if(DeleteLinkList(L,2))
+        cout <<"delete success!\n";
     PrintLinkList(L);
     return 0;
 }
