@@ -32,9 +32,9 @@ void CreateLinkList_H(LinkList &L)
     LinkList s; // 定义一个指针变量
     L = new Node;
     L->next = nullptr; //创建一个空链表
-    std::cout <<"请输入节点个数n:" <<std::endl;
+    std::cout <<"Please enter the number of nodes(n):" <<std::endl;
     std::cin >> n;
-    std::cout <<"请依次输入n个节点的值:" << std::endl;
+    std::cout <<"Enter the values of n nodes in turn:" << std::endl;
     while (n--)
     {
         s = new Node; // 创建新节点s
@@ -55,9 +55,9 @@ void CreateLinkList_R(LinkList &L)
     L = new Node;
     L->next = nullptr;
     R = L;
-    std::cout <<"输入节点个数:" << std::endl;
+    std::cout <<"Please enter the number of nodes(n):" << std::endl;
     std::cin >> n;
-    std::cout <<"依次输入n个元素:" << std::endl;
+    std::cout <<"Enter the values of n nodes in turn::" << std::endl;
     while (n--)
     {
         s = new Node; // 创建新的节点
@@ -131,5 +131,29 @@ bool InsertLinkList(LinkList &L,int i,int v)
     s->data = v;
     s->next = p->next;
     p->next = s;
+    return true;
+}
+
+/**
+ * 删除单链表中的指定节点
+ * @param L 单链表
+ * @param i 指定节点
+ * @return bool
+ */
+bool DeleteLinkList(LinkList &L,int i)
+{
+    LinkList p,q;
+    int j=0;
+    p = L;
+    while ((p->next)&& (j<i-1))
+    {
+        p = p->next;
+        j++;
+    }
+    if(!(p->next) || (j>i-1))
+        return false;
+    q = p->next; //将待删除的节点地址暂存到q里，以备后续的内存释放
+    p->next = q->next;
+    delete q; // 释放被删除节点的内存空间
     return true;
 }

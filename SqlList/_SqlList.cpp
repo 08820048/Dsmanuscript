@@ -36,7 +36,7 @@ bool CreateList(SqlList &L)
     {
         if(L.length == MaxSize)
         {
-            std::cout <<"哦吼！表满了。";
+            std::cout <<"Oh ho! The list is full!";
             return false;
         }
         L.val[i++] = x; // #3 向顺序表添加元素并递增索引
@@ -57,7 +57,7 @@ bool GetVal(SqlList &L,int i,int &v)
 {
     if (i < 1 || i > L.length)
     {
-        std::cout <<"非法位置";
+        std::cout <<"Illegal location!";
         return false;
     }
     v = L.val[i-1];
