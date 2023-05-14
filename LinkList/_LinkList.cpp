@@ -1,85 +1,85 @@
 /**
-* Author: °Ë³ßÑı½£
+* Author: å…«å°ºå¦–å‰‘
 * Date: 2023/5/7
 * Email: iliekxff@gmail.com
 * Blog: https://waer.ltd
-* Desc: µ¥Á´±í¾ßÌåº¯ÊıµÄÊµÏÖ
+* Desc: å•é“¾è¡¨å…·ä½“å‡½æ•°çš„å®ç°
 **/
 #include "_LinkList.h"
 #include <iostream>
 
 /**
- * ³õÊ¼»¯µ¥Á´±í
- * @param L µ¥Á´±í
+ * åˆå§‹åŒ–å•é“¾è¡¨
+ * @param L å•é“¾è¡¨
  * @return bool
  */
 bool InitLinkList(LinkList &L)
 {
-    L = new Node; // ´´½¨Á´±íL
+    L = new Node; // åˆ›å»ºé“¾è¡¨L
     if(!L)
         return false;
-    L->next = nullptr; // Ö¸ÕëÖ¸Ïònullptr
+    L->next = nullptr; // æŒ‡é’ˆæŒ‡å‘nullptr
     return true;
 }
 
 /**
- * µ¥Á´±íµÄ´´½¨-Í·²å·¨
- * @param L µ¥Á´±í
+ * å•é“¾è¡¨çš„åˆ›å»º-å¤´æ’æ³•
+ * @param L å•é“¾è¡¨
  */
 void CreateLinkList_H(LinkList &L)
 {
     int n;
-    LinkList s; // ¶¨ÒåÒ»¸öÖ¸Õë±äÁ¿
+    LinkList s; // å®šä¹‰ä¸€ä¸ªæŒ‡é’ˆå˜é‡
     L = new Node;
-    L->next = nullptr; //´´½¨Ò»¸ö¿ÕÁ´±í
-    std::cout <<"ÇëÊäÈë½Úµã¸öÊın:" <<std::endl;
+    L->next = nullptr; //åˆ›å»ºä¸€ä¸ªç©ºé“¾è¡¨
+    std::cout <<"è¯·è¾“å…¥èŠ‚ç‚¹ä¸ªæ•°n:" <<std::endl;
     std::cin >> n;
-    std::cout <<"ÇëÒÀ´ÎÊäÈën¸ö½ÚµãµÄÖµ:" << std::endl;
+    std::cout <<"è¯·ä¾æ¬¡è¾“å…¥nä¸ªèŠ‚ç‚¹çš„å€¼:" << std::endl;
     while (n--)
     {
-        s = new Node; // ´´½¨ĞÂ½Úµãs
-        std::cin >> s->data; // ½«ÊäÈëµÄ½ÚµãÖµ¸³¸øĞÂ½ÚµãµÄÊı¾İÓòdata
+        s = new Node; // åˆ›å»ºæ–°èŠ‚ç‚¹s
+        std::cin >> s->data; // å°†è¾“å…¥çš„èŠ‚ç‚¹å€¼èµ‹ç»™æ–°èŠ‚ç‚¹çš„æ•°æ®åŸŸdata
         s->next = L->next;
-        L->next = s; // ½«ĞÂ½Úµãs²åÈëµ½L½ÚµãÖ®ºó
+        L->next = s; // å°†æ–°èŠ‚ç‚¹sæ’å…¥åˆ°LèŠ‚ç‚¹ä¹‹å
     }
 }
 
 /**
- * µ¥Á´±íµÄ´´½¨-Î²²å·¨
- * @param L µ¥Á´±í
+ * å•é“¾è¡¨çš„åˆ›å»º-å°¾æ’æ³•
+ * @param L å•é“¾è¡¨
  */
 void CreateLinkList_R(LinkList &L)
 {
-    int n; //Á´±í½ÚµãÊıÁ¿
+    int n; //é“¾è¡¨èŠ‚ç‚¹æ•°é‡
     LinkList s,R;
     L = new Node;
     L->next = nullptr;
     R = L;
-    std::cout <<"ÊäÈë½Úµã¸öÊı:" << std::endl;
+    std::cout <<"è¾“å…¥èŠ‚ç‚¹ä¸ªæ•°:" << std::endl;
     std::cin >> n;
-    std::cout <<"ÒÀ´ÎÊäÈën¸öÔªËØ:" << std::endl;
+    std::cout <<"ä¾æ¬¡è¾“å…¥nä¸ªå…ƒç´ :" << std::endl;
     while (n--)
     {
-        s = new Node; // ´´½¨ĞÂµÄ½Úµã
-        std::cin >> s->data; // ¸øĞÂ½Úµã¸³Öµ
-        s->next = nullptr; // ½«ĞÂ½ÚµãµÄnextÖ¸ÕëÓòÖÃ¿Õ
-        R->next = s; // ½«ĞÂ½Úµã²åÈëµ½µ±Ç°½ÚµãÖ®ºó
-        R = s; // Íê³ÉÎ²Ö¸ÕëµÄ¸³Öµ£¬¸üĞÂÎ²Ö¸ÕëµÄÖ¸Ïò
+        s = new Node; // åˆ›å»ºæ–°çš„èŠ‚ç‚¹
+        std::cin >> s->data; // ç»™æ–°èŠ‚ç‚¹èµ‹å€¼
+        s->next = nullptr; // å°†æ–°èŠ‚ç‚¹çš„nextæŒ‡é’ˆåŸŸç½®ç©º
+        R->next = s; // å°†æ–°èŠ‚ç‚¹æ’å…¥åˆ°å½“å‰èŠ‚ç‚¹ä¹‹å
+        R = s; // å®Œæˆå°¾æŒ‡é’ˆçš„èµ‹å€¼ï¼Œæ›´æ–°å°¾æŒ‡é’ˆçš„æŒ‡å‘
     }
 }
 
 /**
- * »ñÈ¡µ¥Á´±íÖĞµÄµÚi¸ö½ÚµãµÄÊı¾İ
- * @param L µ¥Á´±í
- * @param i Òª»ñÈ¡ÔªËØµÄÄ¿±ê½Úµã
- * @param v Ôİ´æ»ñÈ¡µ½µÄ½ÚµãÖµ
+ * è·å–å•é“¾è¡¨ä¸­çš„ç¬¬iä¸ªèŠ‚ç‚¹çš„æ•°æ®
+ * @param L å•é“¾è¡¨
+ * @param i è¦è·å–å…ƒç´ çš„ç›®æ ‡èŠ‚ç‚¹
+ * @param v æš‚å­˜è·å–åˆ°çš„èŠ‚ç‚¹å€¼
  * @return bool
  */
 bool GetVal(LinkList L,int i,int &v)
 {
     int j = 1;
     LinkList  p;
-    p = L->next; // ½«pÖ¸ÏòÍ·½Úµã
+    p = L->next; // å°†pæŒ‡å‘å¤´èŠ‚ç‚¹
     while (j<i && p)
     {
         p = p->next;
@@ -87,14 +87,14 @@ bool GetVal(LinkList L,int i,int &v)
     }
     if(!p || j>i)
         return false;
-    v = p->data; //½«Ä¿±êÖµÔİ´æµ½vÖĞ
+    v = p->data; //å°†ç›®æ ‡å€¼æš‚å­˜åˆ°vä¸­
     return true;
 }
 
 /**
- * ²éÕÒµ¥Á´±íÖĞµÄÖ¸¶¨½ÚµãÖµ
- * @param L µ¥Á´±í
- * @param e Òª²éÕÒµÄÄ¿±êÖµ
+ * æŸ¥æ‰¾å•é“¾è¡¨ä¸­çš„æŒ‡å®šèŠ‚ç‚¹å€¼
+ * @param L å•é“¾è¡¨
+ * @param e è¦æŸ¥æ‰¾çš„ç›®æ ‡å€¼
  * @return bool
  */
 bool LocateVal(LinkList L,int v)
@@ -103,7 +103,33 @@ bool LocateVal(LinkList L,int v)
     p = L->next;
     while (p&&p->data != v)
         p = p->next;
-    if(!p) // µ½´ïÁ´±íÎ²²¿£¬²éÕÒÊ§°Ü
+    if(!p) // åˆ°è¾¾é“¾è¡¨å°¾éƒ¨ï¼ŒæŸ¥æ‰¾å¤±è´¥
         return false;
+    return true;
+}
+
+/**
+ * åœ¨å•é“¾è¡¨çš„ç¬¬iä¸ªèŠ‚ç‚¹ä¹‹å‰æ’å…¥ç›®æ ‡èŠ‚ç‚¹å€¼v
+ * @param L å•é“¾è¡¨
+ * @param i æ’å…¥ä½ç½®
+ * @param v å¾…æ’å…¥çš„å€¼
+ * @return bool
+ */
+bool InsertLinkList(LinkList &L,int i,int v)
+{
+    int j=0;
+    LinkList p,s;
+    p = L;
+    while (p && j<i-1)
+    {
+        p = p->next;
+        j++;
+    }
+    if (!p || j>i-1) //i>n+1 or i<1 æ’å…¥ä½ç½®ä¸åˆæ³•
+        return false;
+    s = new Node;
+    s->data = v;
+    s->next = p->next;
+    p->next = s;
     return true;
 }

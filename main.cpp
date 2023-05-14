@@ -1,18 +1,29 @@
 /**
-* Author: °Ë³ßÑı½£
+* Author: å…«å°ºå¦–å‰‘
 * Date: 2023/5/7
 * Email: iliekxff@gmail.com
 * Blog: https://waer.ltd
-* Desc: mainº¯ÊıÈë¿Ú
+* Desc: mainå‡½æ•°å…¥å£
 **/
 
 #include "LinkList/_LinkList.h"
 #include <iostream>
 using namespace std;
-
+void PrintLinkList(LinkList L) {
+    LinkList p = L->next;
+    while (p != nullptr) {
+        std::cout << p->data << " ";
+        p = p->next;
+    }
+}
 int main()
 {
-
-
+    LinkList L;
+    CreateLinkList_R(L);
+    if (InsertLinkList(L,3,88))
+        cout <<"success!\n";
+    else
+        cout <<"fail!"<<endl;
+    PrintLinkList(L);
     return 0;
 }
