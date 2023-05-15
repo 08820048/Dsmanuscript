@@ -1,7 +1,7 @@
 /**
 * Author: 八尺妖剑
 * Date: 2023/5/3
-* Email: iliekxff@gmail.com
+* Email: ilikexff@gmail.com
 * Blog: https://waer.ltd
 * Desc: 顺序表的基本操作
 **/

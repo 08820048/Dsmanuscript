@@ -1,9 +1,9 @@
 /**
 * Author: 八尺妖剑
 * Date: 2023/5/10
-* Email: iliekxff@gmail.com
+* Email: ilikexff@gmail.com
 * Blog: https://waer.ltd
-* Desc: 
+* Desc: 单链表基本操作:方法声明
 **/
 #include <iostream>
 const int MaxSize = 100;

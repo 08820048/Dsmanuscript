@@ -1,7 +1,7 @@
 /**
 * Author: 八尺妖剑
 * Date: 2023/5/7
-* Email: iliekxff@gmail.com
+* Email: ilikexff@gmail.com
 * Blog: https://waer.ltd
 * Desc: 单链表.h文件，定义单链表结构以及常用函数
 **/

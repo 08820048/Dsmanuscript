@@ -1,7 +1,7 @@
 /**
 * Author: 八尺妖剑
 * Date: 2023/5/7
-* Email: iliekxff@gmail.com
+* Email: ilikexff@gmail.com
 * Blog: https://waer.ltd
 * Desc: 单链表具体函数的实现
 **/
