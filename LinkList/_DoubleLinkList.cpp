@@ -74,5 +74,28 @@ bool InsertDoubleLinkList(DoubleLinkList &L,int i,int v)
     return true;
 }
 
+/**
+ * 删除指定节点
+ * @param L 双链表
+ * @param i 要删除的第i个节点
+ * @return bool
+ */
+bool DeleteDoubleLinkList(DoubleLinkList &L,int i)
+{
+    DoubleLinkList p;
+    int j = 0;
+    p = L;
+    while (p && j < i)
+    {
+        p = p->next;
+        j++;
+    }
+    if (!p || j > i) return false;
+    if (p->next)
+        p->next->pre = p->pre;
+    p->pre->next = p->next;
+    delete p;
+    return true;
+}
 
 

@@ -37,3 +37,11 @@ void CreateDoubleLinkList_H(DoubleLinkList &L);
 bool InsertDoubleLinkList(DoubleLinkList &L,int i,int v);
 
 
+/**
+ * 删除指定节点
+ * @param L 双链表
+ * @param i 要删除的第i个节点
+ * @return bool
+ */
+bool DeleteDoubleLinkList(DoubleLinkList &L,int i);
+
