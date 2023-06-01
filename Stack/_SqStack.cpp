@@ -31,7 +31,7 @@ bool InitStack(SqStack &S)
  */
 bool Push(SqStack &S,int v)
 {
-    if (S.Top - S.Base == MaxSize) // 满栈状态，不能继续入栈
+    if (IsFull(S)) // 满栈状态，不能继续入栈
         return false;
     *S.Top++=v; // 将元素入栈且完成Top指针的上移
     return true;
@@ -45,8 +45,42 @@ bool Push(SqStack &S,int v)
  */
 bool Pop(SqStack &S,int &v)
 {
-    if (S.Base == S.Top)
+    if (IsEmpty(S))
         return false; // 栈空
     v = *--S.Top;
     return true;
+}
+
+/**
+ * 获取栈顶元素
+ * @param S 栈
+ * @return int
+ */
+int GetTop(SqStack S)
+{
+    if (!IsEmpty(S))
+        return *(S.Top - 1);
+    else
+        return -1;
+}
+
+
+/**
+ * 是否空栈
+ * @param S 栈
+ * @return bool
+ */
+bool IsEmpty(SqStack S)
+{
+    return S.Base == S.Top;
+}
+
+/**
+ * 是否满栈
+ * @param S 栈
+ * @return bool
+ */
+bool IsFull(SqStack S)
+{
+    return S.Top - S.Base == MaxSize;
 }

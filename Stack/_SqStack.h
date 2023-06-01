@@ -45,3 +45,16 @@ bool Pop(SqStack &S,int &e);
  */
 int GetTop(SqStack S);
 
+/**
+ * 是否空栈
+ * @param S 栈
+ * @return bool
+ */
+bool IsEmpty(SqStack S);
+
+/**
+ * 是否满栈
+ * @param S 栈
+ * @return bool
+ */
+bool IsFull(SqStack S);
