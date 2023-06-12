@@ -27,3 +27,37 @@ bool IsEmpty(LinkStack S)
 {
     return S == nullptr;
 }
+
+/**
+ * 入栈
+ * @param S 栈
+ * @param v 入栈的元素
+ * @return bool
+ */
+bool Push(LinkStack &S,int v)
+{
+    LinkStack p;
+    p = new LkStack;
+    p->data = v;
+    p->Top = S; // 将S的地址赋给新节点p的指针域
+    S = p; // 将p更新为新的栈顶指针
+    return true;
+}
+
+/**
+ * 出栈
+ * @param S 栈
+ * @param v 出栈元素
+ * @return bool
+ */
+bool Pop(LinkStack &S,int &v)
+{
+    LinkStack p;
+    if (IsEmpty(S))
+        return false;
+    v = S->data;
+    p = S; // 暂存栈顶元素地址
+    S = S->Top; // 更新栈顶
+    delete p; // 释放空间
+    return true;
+}
