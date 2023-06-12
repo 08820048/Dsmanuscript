@@ -61,3 +61,16 @@ bool Pop(LinkStack &S,int &v)
     delete p; // 释放空间
     return true;
 }
+
+/**
+ * 弹出栈顶元素
+ * @param S 栈
+ * @return int
+ */
+int GetTop(LinkStack S)
+{
+    if (!IsEmpty(S))
+        return S->data;
+    else
+        return -1;
+}
