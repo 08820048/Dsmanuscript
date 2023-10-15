@@ -8,6 +8,7 @@
 
 #include "LinkList/_LinkList.h"
 #include <iostream>
+#include "Queue/SqQueue.h"
 using namespace std;
 void PrintLinkList(LinkList L) {
     LinkList p = L->next;
@@ -16,6 +17,7 @@ void PrintLinkList(LinkList L) {
         p = p->next;
     }
 }
+/*
 int main()
 {
     LinkList L;
@@ -27,5 +29,30 @@ int main()
     if(DeleteLinkList(L,2))
         cout <<"delete success!\n";
     PrintLinkList(L);
+    return 0;
+}
+*/
+int main()
+{
+    SqQueue Q;
+    InitQueue(Q);
+
+    // 测试入队
+    EnQueue(Q, 1);
+    EnQueue(Q, 2);
+    EnQueue(Q, 3);
+
+    // 测试出队
+    int e;
+    while (DeQueue(Q, e))
+    {
+        std::cout << "Dequeued element: " << e << std::endl;
+    }
+
+    // 测试取队头元素
+    EnQueue(Q, 4);
+    int head = GetHead(Q);
+    std::cout << "Queue head element: " << head << std::endl;
+
     return 0;
 }
